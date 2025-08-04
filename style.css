@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --branco: rgb(211, 211, 211);
+    --azul: rgb(55, 55, 215);
+    --fonte: 'Poppins', sans-serif;
+    --cards: rgb(23, 23, 23);
+    --sombra: 0px 5px 50px -12px #00000080;
+    --footer: rgb(14, 14, 14);
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'Poppins', sans-serif;
+    color: var(--branco);
+    font-weight: 420;
+}
+
+main{
+    padding: 10%;
+}
+
+header{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    height: 120px;
+    z-index: 1000;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 26%;
+}
+
+nav ul li{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    display: flex;
+    font-size: 17.5px;
+    text-decoration: none;
+    color: var(--branco);
+    align-items: center;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color: var(--azul);
+    text-decoration: overline 2px;
+}
+
+.introducao{
+    margin-top: 12%;
+}
+
+.introducao h1{
+    width: 50%;
+    font-size: 40px;
+}
+
+.introducao h3{
+    margin-top: 1%;
+}
+
+.introducao span{
+    color: rgb(55, 55, 215);
+    text-decoration: overline;
+}
+
+.introducao button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    border-radius: 5px;
+    background: transparent;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--azul);
+    width: 12%;
+    height: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.introducao button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte);
+    color: var(--azul);
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.introducao button:hover{
+    transform: scale(1.04);
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+.introducao button a:hover{
+    color: var(--branco);
+}
+
+.imagem{
+    display: flex;
+    justify-content: end;
+}
+
+.imagem img{
+    display: flex;
+    position: absolute;
+    margin-right: 15%;
+    margin-top: 15%;
+    border: solid; 
+    border-color: var(--azul);
+    border-width: 5px;
+    border-radius: 1000px;
+}
+
+#sobre h1{
+    margin-top: 25%;
+    font-size: 40px;
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+}
+
+.sobre{
+    display: flex;
+    margin-top: 4%;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--cards);
+    box-shadow: 0px 5px 50px -12px #00000080;
+    padding: 4%;
+}
+
+.sobre p{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.ferramentas{
+    margin-top: 20%;
+    font-size: 40px;
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+}
+
+.flex{
+    margin-top: 4%;
+    display: flex;
+    gap: 3%;
+}
+
+#ferramentas h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 28px;
+    font-weight: 650;
+}
+
+.flex .logos{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.javascript img{
+    margin-top: 6%;
+}
+
+.css img{
+    margin-top: 3.5%;
+}
+
+.html{
+    width: 500px;
+    height: 400px;
+    background-color: var(--cards);
+    box-shadow: var(--sombra);
+    transition: 0.2s;
+}
+
+.html h3{
+    color: rgb(255, 105, 18);
+}
+
+.html:hover{
+    transform: scale(1.02);
+}
+
+.css{
+    width: 500px;
+    height: 400px;
+    background-color: var(--cards);
+    box-shadow: var(--sombra);
+    transition: 0.2s;
+}
+
+.css h3{
+    color: rgb(36, 162, 241);
+}
+
+.css:hover{
+    transform: scale(1.02);
+}
+
+.javascript{
+    width: 500px;
+    height: 400px;
+    background-color: var(--cards);
+    box-shadow: var(--sombra);
+    transition: 0.2s;
+}
+
+.javascript h3{
+    color: rgb(251, 255, 0);
+}
+
+.javascript:hover{
+    transform: scale(1.02);
+}
+
+#projetos h1{
+    margin-top: 20%;
+    font-size: 40px;
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+}
+
+.meusprojetos{
+    display: flex;
+    margin-top: 4%;
+    gap: 3%;
+}
+
+.projeto{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cards);
+    box-shadow: var(--sombra);
+    width: 500px;
+    height: 800px;
+    transition: 0.2s;
+}
+
+.projeto:hover{
+    transform: scale(1.04);
+}
+
+.projeto h3{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    padding: 3%;
+    background-color: var(--footer);
+    height: 250px;
+}
+
+footer .contatos h3{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    list-style: none;
+    gap: 1.5%;
+}
+
+footer ul li i{
+    font-size: 30px;
+    transition: 0.2s
+    ;cursor: pointer;
+}
+
+footer ul li i:hover{
+    transform:scale(1.2);
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-weight: 300;
+}
