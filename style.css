@@ -42,7 +42,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: center;
-    gap: 26%;
+    gap: 22%;
 }
 
 nav ul li{
@@ -52,7 +52,7 @@ nav ul li{
 
 nav ul li a{
     display: flex;
-    font-size: 17.5px;
+    font-size: 19px;
     text-decoration: none;
     color: var(--branco);
     align-items: center;
