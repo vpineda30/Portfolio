@@ -33,9 +33,10 @@ nav{
     display: flex;
     justify-content: center;
     position: fixed;
-    background-color: rgb(14, 14, 14);
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0px 5px 20px -2px #0000005a;
     width: 100%;
-    height: 120px;
+    height: 90px;
     z-index: 1000;
 }
 
@@ -52,7 +53,7 @@ nav ul li{
 
 nav ul li a{
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     color: var(--branco);
     align-items: center;
@@ -65,16 +66,17 @@ nav ul li a:hover{
 }
 
 .introducao{
-    margin-top: 12%;
+    margin-top: 10%;
 }
 
 .introducao h1{
-    width: 50%;
-    font-size: 45px;
+    width: 55%;
+    font-size: 35px;
 }
 
 .introducao h3{
     margin-top: 1%;
+    font-size: 15px;
 }
 
 .introducao span{
@@ -91,7 +93,7 @@ nav ul li a:hover{
     border: solid;
     border-width: 2px;
     border-color: var(--azul);
-    width: 12%;
+    width: 15%;
     height: 40px;
     transition: 0.2s;
     cursor: pointer;
@@ -103,8 +105,8 @@ nav ul li a:hover{
     align-items: center;
     font-family: var(--fonte);
     color: var(--azul);
-    font-size: 16px;
-    width: 100%;
+    font-size: 14px;
+    width: 120%;
     height: 50px;
     font-weight: 550;
     text-decoration: none;
@@ -139,7 +141,7 @@ nav ul li a:hover{
 
 #sobre h1{
     margin-top: 25%;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--azul);
     display: flex;
     justify-content: center;
@@ -149,7 +151,7 @@ nav ul li a:hover{
     display: flex;
     margin-top: 5%;
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 10px;
     background-color: var(--cards);
     box-shadow: 0px 5px 50px -12px #00000080;
@@ -160,13 +162,13 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     text-align: justify;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 .ferramentas{
     margin-top: 20%;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--azul);
     display: flex;
     justify-content: center;
@@ -176,7 +178,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     margin-top: 10%;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 650;
 }
 
@@ -209,9 +211,10 @@ nav ul li a:hover{
 }
 
 .php{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -226,7 +229,7 @@ nav ul li a:hover{
 
 .php i{
     margin-top: 5%;
-    font-size: 140px;
+    font-size: 120px;
     color: rgb(92, 144, 192);
 }
 
@@ -239,9 +242,10 @@ nav ul li a:hover{
 }
 
 .sql{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -257,9 +261,10 @@ nav ul li a:hover{
 }
 
 .n8n{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -277,9 +282,10 @@ nav ul li a:hover{
 }
 
 .html{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -293,9 +299,10 @@ nav ul li a:hover{
 }
 
 .css{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -317,9 +324,10 @@ nav ul li a:hover{
 }
 
 .javascript{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     background-color: var(--cards);
+    border-radius: 10px;
     box-shadow: var(--sombra);
     transition: 0.2s;
 }
@@ -334,13 +342,15 @@ nav ul li a:hover{
 
 #projetos h1{
     margin-top: 25%;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--azul);
     display: flex;
     justify-content: center;
 }
 
 .meusprojetos{
+    display: flex;
+    justify-content: center;
     display: flex;
     margin-top: 5%;
     gap: 3%;
@@ -351,8 +361,9 @@ nav ul li a:hover{
     justify-content: center;
     background-color: var(--cards);
     box-shadow: var(--sombra);
+    border-radius: 10px;
     width: 500px;
-    height: 800px;
+    height: 450px;
     transition: 0.2s;
 }
 
@@ -374,19 +385,20 @@ footer{
 footer .contatos h3{
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    margin-top: 3%;
+    font-size: 22px;
 }
 
 footer ul{
     display: flex;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: 2%;
     list-style: none;
     gap: 1.5%;
 }
 
 footer ul li i{
-    font-size: 30px;
+    font-size: 25px;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -400,4 +412,5 @@ h4{
     justify-content: center;
     margin-top: 3%;
     font-weight: 300;
+    font-size: 14px;
 }
